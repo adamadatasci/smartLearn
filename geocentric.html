@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#0b1020">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-180.png">
+    <title>Earth-Centered Sun and Moon Lab</title>
+    <link rel="stylesheet" href="geocentric.css?v=20260507">
+</head>
+<body>
+    <canvas id="orbit-canvas" aria-label="Earth-centered view with Sun and Moon rotating around Earth"></canvas>
+
+    <section id="intro" aria-live="polite">
+        <p class="eyebrow">Reference Frame Lab</p>
+        <h1>Earth at the Center</h1>
+        <p>
+            Assume Earth is the center of inertia for this lesson. Watch the Sun and Moon move around Earth,
+            while the Sun makes one apparent turn every 24 hours. The small screens show day/night, the Moon in the local sky,
+            moon phases, and seasons with snow, flowers, sun, and leaves.
+        </p>
+        <div class="fact-chips" aria-hidden="true">
+            <span>Earth fixed center</span>
+            <span>24-hour rotation</span>
+            <span>Sun apparent year</span>
+            <span>Moon monthly orbit</span>
+            <span>Seasons & phases</span>
+        </div>
+        <button id="startBtn" type="button">START EARTH-CENTER LAB</button>
+        <div id="intro-note">This is a geocentric reference-frame illustration: Earth is drawn fixed while the Sun appears to turn once per day.</div>
+    </section>
+
+    <nav id="top-nav" aria-label="InteractiveLearn apps">
+        <a href="index.html">🏠 Home</a>
+        <a href="dots.html">⊙ Dots</a>
+        <a href="letters.html">A Letters</a>
+        <a href="wordmatch.html">🔤 Words</a>
+        <a href="mathsymbols.html">∑ Math</a>
+        <a href="measure.html">📏 Measure</a>
+        <a href="earthorbit.html">🌍 Orbit</a>
+        <a href="gaussian.html">🔔 Gaussian</a>
+    </nav>
+
+    <aside id="control-panel" aria-label="Earth-centered orbit controls">
+        <button id="pauseBtn" type="button">⏸ Pause</button>
+        <button id="slowerBtn" type="button">− Slower</button>
+        <button id="fasterBtn" type="button">+ Faster</button>
+        <button id="labelsBtn" type="button">🏷 Labels</button>
+        <button id="resetBtn" type="button">↻ Reset</button>
+    </aside>
+
+    <section id="info-panel" aria-label="Earth-centered facts">
+        <div class="panel-card season-card">
+            <div class="card-title">Season</div>
+            <div id="seasonIcon" class="big-icon">❄️</div>
+            <div id="seasonName" class="main-value">Winter</div>
+            <div id="seasonReason" class="tiny-text">North Pole leans away from the Sun.</div>
+        </div>
+
+        <div class="panel-card moon-card">
+            <div class="card-title">Moon Phase Screen</div>
+            <canvas id="moon-screen" width="220" height="160" aria-label="Current Moon phase"></canvas>
+            <div id="moonName" class="main-value">New Moon</div>
+            <div id="moonPercent" class="tiny-text">0% lit</div>
+        </div>
+
+        <div class="panel-card day-card">
+            <div class="card-title">Day / Night Screen</div>
+            <canvas id="earth-screen" width="220" height="160" aria-label="Day and night on Earth"></canvas>
+            <div id="dayNightLabel" class="main-value">Day side faces the Sun</div>
+            <div class="tiny-text">Earth is fixed here; the Sun direction turns once per day.</div>
+        </div>
+
+        <div class="panel-card sky-card">
+            <div class="card-title">24-Hour Sky Screen</div>
+            <canvas id="sky-screen" width="220" height="160" aria-label="Sun and Moon in the local sky over 24 hours"></canvas>
+            <div id="skyLabel" class="main-value">Noon sky</div>
+            <div id="skyDetail" class="tiny-text">Moon visibility changes with phase and season.</div>
+        </div>
+    </section>
+
+    <section id="stats-panel" aria-live="polite"></section>
+    <div id="message" role="status">Earth is fixed in this reference frame; the Sun makes one apparent trip around Earth per year.</div>
+
+    <script src="js/geocentric.js?v=20260507"></script>
+</body>
+</html>

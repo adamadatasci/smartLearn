@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#0b1020">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-180.png">
+    <title>2D Shape Surface Lab</title>
+    <link rel="stylesheet" href="measure.css?v=20260505">
+</head>
+<body>
+    <canvas id="measure-canvas" aria-label="2D Shape Surface and Perimeter Activity"></canvas>
+
+    <section id="overlay">
+        <h1>2D Shape Surface Lab</h1>
+        <p>Explore 2D shapes with grid squares. Learn surface area, perimeter, multiplication, and repeated addition using rectangles, squares, triangles, circles, and more.</p>
+        <div class="lesson-cards" aria-hidden="true">
+            <span>Surface Area</span>
+            <span>Perimeter</span>
+            <span>Multiplication</span>
+            <span>Addition</span>
+            <span>2D Shapes</span>
+        </div>
+        <button id="startBtn" type="button">START ACTIVITY</button>
+        <div id="loading-text">Choose a shape card and count the grid squares.</div>
+    </section>
+
+    <div id="controls">
+        <button id="resetBtn" type="button" title="Reset activity (R)">&#8635; Reset</button>
+        <a href="index.html" title="Home">🏠 Home</a>
+        <a href="shapes.html" title="Shape Shifter">▲ Shapes</a>
+        <a href="dots.html" title="Ordered Dots">⊙ Dots</a>
+        <a href="letters.html" title="Letters">A Letters</a>
+        <a href="wordmatch.html" title="Icon Word Match">🔤 Word Match</a>
+        <a href="spellword.html" title="Build the Word">🧩 Spell Word</a>
+        <a href="arrowpath.html" title="Arrow Path Grid">➡️ Arrows</a>
+        <a href="patternsounds.html" title="Pattern & Sound Match">🔁 Sounds</a>
+        <a href="numberquantity.html" title="Number Quantity Match">🔢 Quantity</a>
+        <a href="bigsmall.html" title="Big / Small Sorter">↕️ Big Small</a>
+        <a href="eggmath.html" title="Egg Math">🥚 Egg Math</a>
+        <a href="earthorbit.html" title="Earth Orbit Lab">🌍 Orbit Lab</a>
+        <a href="gaussian.html" title="Gaussian Distribution Lab">🔔 Gaussian</a>
+        <a href="geocentric.html" title="Earth-Centered Orbit Lab">🌐 Earth Center</a>
+    </div>
+
+    <div id="lesson-controls" aria-label="Measurement lesson controls">
+        <button class="lesson-mode active" type="button" data-mode="surface">🟦 Surface</button>
+        <button class="lesson-mode" type="button" data-mode="perimeter">🐜 Perimeter</button>
+        <button class="lesson-mode" type="button" data-mode="parameters">📏 Sizes</button>
+    </div>
+
+    <aside id="stats-panel" aria-live="polite"></aside>
+    <div id="message" role="status" aria-live="polite">Choose a 2D shape.</div>
+
+    <script src="js/measure.js?v=20260505"></script>
+</body>
+</html>

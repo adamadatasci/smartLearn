@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#0b1020">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-180.png">
+    <title>Arrow Path Grid</title>
+    <link rel="stylesheet" href="arrowpath.css?v=20260505">
+</head>
+<body>
+    <canvas id="fx-canvas" aria-hidden="true"></canvas>
+
+    <main id="app">
+        <nav id="top-nav" aria-label="InteractiveLearn apps">
+            <a href="index.html">🏠 Home</a>
+            <a href="letters.html">A Letters</a>
+            <a href="wordmatch.html">🔤 Words</a>
+            <a href="spellword.html">🧩 Spell</a>
+            <a href="patternsounds.html">🔁 Sounds</a>
+            <a href="numberquantity.html">🔢 Quantity</a>
+            <a href="bigsmall.html">↕️ Big Small</a>
+            <a href="dots.html">⊙ Dots</a>
+            <a href="eggmath.html">🥚 Egg Math</a>
+            <a href="measure.html">📏 Measure</a>
+        </nav>
+
+        <section id="game-card" aria-live="polite">
+            <div id="header-row">
+                <div>
+                    <p class="eyebrow">Directions Game</p>
+                    <h1>Follow the Arrows</h1>
+                </div>
+                <div id="score-panel">
+                    <span id="levelText">Level 1</span>
+                    <span id="starsText">Stars 0</span>
+                </div>
+            </div>
+
+            <p id="instruction">Start on the beating dot. Follow every arrow in order, then tap the final square.</p>
+
+            <div id="arrow-strip" aria-label="Arrow sequence"></div>
+
+            <div id="play-area">
+                <div id="grid" aria-label="Direction grid"></div>
+                <aside id="side-panel">
+                    <div id="mini-map">
+                        <span class="legend-dot start"></span> Start
+                        <span class="legend-dot guess"></span> Your tap
+                    </div>
+                    <p id="feedback" role="status">Where do the arrows end?</p>
+                    <div id="actions">
+                        <button id="newBtn" type="button">New Arrows</button>
+                        <button id="showBtn" type="button">Show Path</button>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/arrowpath.js?v=20260505"></script>
+</body>
+</html>

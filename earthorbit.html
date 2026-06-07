@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#0b1020">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-180.png">
+    <title>Earth, Moon, Sun Orbit Lab</title>
+    <link rel="stylesheet" href="earthorbit.css?v=20260507">
+</head>
+<body>
+    <canvas id="orbit-canvas" aria-label="Earth orbiting the Sun while the Moon orbits Earth"></canvas>
+
+    <section id="intro" aria-live="polite">
+        <p class="eyebrow">Space Science Lab</p>
+        <h1>Earth Goes Around the Sun</h1>
+        <p>
+            Watch Earth travel on its real slightly oval orbit while the Moon follows its own tilted oval path.
+            See day and night, moon phases, and the seasons change together.
+        </p>
+        <div class="fact-chips" aria-hidden="true">
+            <span>365.256-day year</span>
+            <span>23.44° tilt</span>
+            <span>29.53-day moon phases</span>
+            <span>Elliptical paths</span>
+        </div>
+        <button id="startBtn" type="button">START ORBIT LAB</button>
+        <div id="intro-note">Trajectories use real orbital eccentricities; sizes and distances are enlarged so kids can see them.</div>
+    </section>
+
+    <nav id="top-nav" aria-label="InteractiveLearn apps">
+        <a href="index.html">🏠 Home</a>
+        <a href="shapes.html">▲ Shapes</a>
+        <a href="dots.html">⊙ Dots</a>
+        <a href="letters.html">A Letters</a>
+        <a href="wordmatch.html">🔤 Words</a>
+        <a href="spellword.html">🧩 Spell</a>
+        <a href="mathsymbols.html">∑ Math</a>
+        <a href="measure.html">📏 Measure</a>
+        <a href="gaussian.html">🔔 Gaussian</a>
+        <a href="geocentric.html">🌐 Earth Center</a>
+    </nav>
+
+    <aside id="control-panel" aria-label="Orbit controls">
+        <button id="pauseBtn" type="button">⏸ Pause</button>
+        <button id="slowerBtn" type="button">− Slower</button>
+        <button id="fasterBtn" type="button">+ Faster</button>
+        <button id="labelsBtn" type="button">🏷 Labels</button>
+        <button id="resetBtn" type="button">↻ Reset</button>
+    </aside>
+
+    <section id="info-panel" aria-label="Space facts">
+        <div class="panel-card season-card">
+            <div class="card-title">Season</div>
+            <div id="seasonIcon" class="big-icon">❄️</div>
+            <div id="seasonName" class="main-value">Winter</div>
+            <div id="seasonReason" class="tiny-text">North Pole leans away from the Sun.</div>
+        </div>
+
+        <div class="panel-card moon-card">
+            <div class="card-title">Moon Phase Screen</div>
+            <canvas id="moon-screen" width="220" height="160" aria-label="Current Moon phase"></canvas>
+            <div id="moonName" class="main-value">New Moon</div>
+            <div id="moonPercent" class="tiny-text">0% lit</div>
+        </div>
+
+        <div class="panel-card day-card">
+            <div class="card-title">Day / Night Screen</div>
+            <canvas id="earth-screen" width="220" height="160" aria-label="Day and night on Earth"></canvas>
+            <div id="dayNightLabel" class="main-value">Day side faces the Sun</div>
+            <div class="tiny-text">Earth spins once per day.</div>
+        </div>
+    </section>
+
+    <section id="stats-panel" aria-live="polite"></section>
+    <div id="message" role="status">Earth's oval path is nearly circular, but the Sun sits at one focus.</div>
+
+    <script src="js/earthorbit.js?v=20260507"></script>
+</body>
+</html>

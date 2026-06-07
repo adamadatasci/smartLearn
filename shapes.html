@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#0b1020">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-180.png">
+    <title>Shape Sorter — Bucket Game</title>
+    <link rel="stylesheet" href="shapes.css?v=20260505">
+</head>
+<body>
+    <canvas id="game-canvas"></canvas>
+
+    <div id="overlay">
+        <h1>Shape Sorter</h1>
+        <p>Move the glowing horizontal bar with your mouse. Shapes fall very slowly; guide them into matching buckets. If a shape touches the bar, it pops away.</p>
+
+        <div id="shape-selector">
+            <span class="selector-label">Goal:</span>
+            <div id="player-shape-buttons" class="shape-btn-row">
+                <button class="shape-btn active" type="button">Match shape to bucket</button>
+                <button class="shape-btn active" type="button">+10 right</button>
+                <button class="shape-btn" type="button">-3 wrong</button>
+            </div>
+
+            <span class="selector-label" style="margin-top:1rem">Buckets:</span>
+            <div id="falling-shape-buttons" class="shape-btn-row">
+                <button class="shape-btn active" type="button">&#9679; Circle</button>
+                <button class="shape-btn active" type="button">&#9632; Square</button>
+                <button class="shape-btn active" type="button">&#9650; Triangle</button>
+                <button class="shape-btn active" type="button">&#11042; Hexagon</button>
+            </div>
+        </div>
+
+        <button id="startBtn">START EXPERIENCE</button>
+        <div id="loading-text"></div>
+    </div>
+
+    <div id="controls">
+        <button id="resetBtn" title="Reset shapes (R)">&#8635; Reset</button>
+        <button id="burstBtn" title="Spawn burst (B)">&#10022; Burst</button>
+        <a href="dots.html"    style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Ordered Dots">&#9711; Dots</a>
+        <a href="letters.html"  style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Letters A-Z">&#65; Letters</a>
+        <a href="wordmatch.html" style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Icon Word Match">🔤 Word Match</a>
+        <a href="spellword.html" style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Build the Word">🧩 Spell Word</a>
+        <a href="arrowpath.html" style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Arrow Path Grid">➡️ Arrows</a>
+        <a href="patternsounds.html" style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Pattern & Sound Match">🔁 Sounds</a>
+        <a href="numberquantity.html" style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Number Quantity Match">🔢 Quantity</a>
+        <a href="bigsmall.html" style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Big / Small Sorter">↕️ Big Small</a>
+        <a href="hideball.html" style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Hidden Ball">&#9679; Hidden Ball</a>
+        <a href="tictactoe.html" style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Tic-Tac-Toe"># Tic-Tac-Toe</a>
+        <a href="mathsymbols.html" style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Math Symbols Hunt">∑ Math Symbols</a>
+        <a href="measure.html" style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Shape Splash Measurement">💧 Measurement</a>
+    </div>
+
+    <div id="stats-panel"></div>
+
+    <script src="js/shapes.js?v=20260505"></script>
+</body>
+</html>

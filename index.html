@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="InteractiveLearn">
+    <meta name="theme-color" content="#0b1020">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-180.png">
+    <title>InteractiveLearn</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        :root {
+            --safe-top: env(safe-area-inset-top, 0px);
+            --safe-bottom: env(safe-area-inset-bottom, 0px);
+        }
+        html, body {
+            height: 100%;
+            background: #0b1020;
+            font-family: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            color: #e8ecff;
+            -webkit-text-size-adjust: 100%;
+        }
+        body {
+            background:
+                radial-gradient(1200px 600px at 20% -10%, #1b2a55 0%, transparent 60%),
+                radial-gradient(1000px 500px at 100% 0%, #3a1f5c 0%, transparent 55%),
+                #0b1020;
+            min-height: 100%;
+            padding:
+                calc(var(--safe-top) + 18px)
+                max(16px, env(safe-area-inset-right))
+                calc(var(--safe-bottom) + 24px)
+                max(16px, env(safe-area-inset-left));
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        header.home-head {
+            text-align: center;
+            margin-bottom: 18px;
+        }
+        header.home-head .logo {
+            font-size: 2.4rem;
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+        header.home-head h1 {
+            font-size: 1.55rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        header.home-head p {
+            margin-top: 4px;
+            font-size: 0.86rem;
+            color: #9aa6d6;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            max-width: 520px;
+            margin: 0 auto;
+        }
+        a.tile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+            color: #eaf0ff;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 20px;
+            padding: 16px 10px;
+            min-height: 104px;
+            transition: transform 0.12s ease, background 0.2s ease;
+        }
+        a.tile:active {
+            transform: scale(0.95);
+            background: rgba(255, 255, 255, 0.12);
+        }
+        a.tile .emoji { font-size: 2rem; line-height: 1; margin-bottom: 8px; }
+        a.tile .name { font-size: 0.82rem; font-weight: 600; line-height: 1.2; }
+        footer.home-foot {
+            text-align: center;
+            margin-top: 22px;
+            font-size: 0.72rem;
+            color: #6c779f;
+        }
+    </style>
+</head>
+<body>
+    <header class="home-head">
+        <div class="logo">🎓</div>
+        <h1>InteractiveLearn</h1>
+        <p>Tap a game to play</p>
+    </header>
+
+    <nav class="grid" aria-label="Learning games">
+        <a class="tile" href="numberquantity.html"><span class="emoji">🔢</span><span class="name">Number Quantity</span></a>
+        <a class="tile" href="shapes.html"><span class="emoji">🔺</span><span class="name">Shape Sorter</span></a>
+        <a class="tile" href="dots.html"><span class="emoji">⚪</span><span class="name">Ordered Dots</span></a>
+        <a class="tile" href="letters.html"><span class="emoji">🔠</span><span class="name">Letters A–Z</span></a>
+        <a class="tile" href="wordmatch.html"><span class="emoji">🖼️</span><span class="name">Word Match</span></a>
+        <a class="tile" href="spellword.html"><span class="emoji">🧩</span><span class="name">Spell Word</span></a>
+        <a class="tile" href="patternsounds.html"><span class="emoji">🔁</span><span class="name">Pattern &amp; Sounds</span></a>
+        <a class="tile" href="arrowpath.html"><span class="emoji">➡️</span><span class="name">Arrow Path</span></a>
+        <a class="tile" href="bigsmall.html"><span class="emoji">↕️</span><span class="name">Big / Small</span></a>
+        <a class="tile" href="hideball.html"><span class="emoji">🙈</span><span class="name">Hidden Ball</span></a>
+        <a class="tile" href="tictactoe.html"><span class="emoji">⭕</span><span class="name">Tic-Tac-Toe</span></a>
+        <a class="tile" href="mathsymbols.html"><span class="emoji">➗</span><span class="name">Math Symbols</span></a>
+        <a class="tile" href="eggmath.html"><span class="emoji">🥚</span><span class="name">Egg Math</span></a>
+        <a class="tile" href="measure.html"><span class="emoji">📏</span><span class="name">Measure</span></a>
+        <a class="tile" href="earthorbit.html"><span class="emoji">🌍</span><span class="name">Orbit Lab</span></a>
+        <a class="tile" href="gaussian.html"><span class="emoji">🔔</span><span class="name">Gaussian Lab</span></a>
+        <a class="tile" href="geocentric.html"><span class="emoji">🌐</span><span class="name">Earth-Center Lab</span></a>
+    </nav>
+
+    <footer class="home-foot">InteractiveLearn · built for iPhone</footer>
+
+    <script>
+        // Register service worker for offline / installable app behaviour.
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js').catch(() => {});
+            });
+        }
+    </script>
+</body>
+</html>

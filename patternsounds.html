@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#0b1020">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-180.png">
+    <title>Pattern & Sound Match</title>
+    <link rel="stylesheet" href="patternsounds.css?v=20260505">
+</head>
+<body>
+    <canvas id="party-canvas" aria-hidden="true"></canvas>
+
+    <main id="app" aria-live="polite">
+        <nav id="top-nav" aria-label="InteractiveLearn apps">
+            <a href="shapes.html">▲ Shapes</a>
+            <a href="dots.html">⊙ Dots</a>
+            <a href="letters.html">A Letters</a>
+            <a href="wordmatch.html">🔤 Words</a>
+            <a href="spellword.html">🧩 Spell</a>
+            <a href="arrowpath.html">➡️ Arrows</a>
+            <a href="numberquantity.html">🔢 Quantity</a>
+            <a href="bigsmall.html">↕️ Big Small</a>
+            <a href="mathsymbols.html">∑ Symbols</a>
+            <a href="eggmath.html">🥚 Egg Math</a>
+            <a href="measure.html">📏 Measure</a>
+        </nav>
+
+        <section id="game-card">
+            <header id="header-row">
+                <div>
+                    <p class="eyebrow">Toddler Logic + Reading</p>
+                    <h1>Pattern & Sound Match</h1>
+                </div>
+                <div id="score-panel">
+                    <span id="modeText">Patterns</span>
+                    <span id="starsText">Stars 0</span>
+                </div>
+            </header>
+
+            <div id="mode-buttons" role="tablist" aria-label="Game mode">
+                <button id="patternModeBtn" class="mode-btn active" type="button">🔁 Shape Pattern</button>
+                <button id="letterModeBtn" class="mode-btn" type="button">🔊 Letter Sound</button>
+            </div>
+
+            <p id="instruction">What comes next? Look at the pattern and choose the missing shape.</p>
+
+            <section id="challenge-stage">
+                <div id="pattern-row" aria-label="Shape pattern"></div>
+                <div id="letter-card" class="hidden" aria-label="Letter sound challenge">
+                    <div id="target-letter">B</div>
+                    <div id="letter-sound-text">B says /b/</div>
+                </div>
+            </section>
+
+            <section id="choices" aria-label="Choices"></section>
+            <p id="feedback" role="status">Choose the answer.</p>
+
+            <div id="actions">
+                <button id="hearBtn" type="button">🔊 Hear</button>
+                <button id="nextBtn" type="button">Next →</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/patternsounds.js?v=20260505"></script>
+</body>
+</html>

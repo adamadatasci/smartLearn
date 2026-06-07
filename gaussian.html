@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#0b1020">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-180.png">
+    <title>Gaussian Distribution Ball Lab</title>
+    <link rel="stylesheet" href="gaussian.css?v=20260507">
+</head>
+<body>
+    <canvas id="gaussian-canvas" aria-label="Colored balls bouncing through obstacle pegs into buckets forming a Gaussian distribution"></canvas>
+
+    <section id="intro" aria-live="polite">
+        <p class="eyebrow">Probability Lab</p>
+        <h1>Gaussian Distribution</h1>
+        <p>
+            Drop many colored balls through a Galton board. Each random left-or-right bounce adds up,
+            and the bucket counts grow into a bell-shaped Gaussian curve.
+        </p>
+        <div class="fact-chips" aria-hidden="true">
+            <span>Random bounces</span>
+            <span>Colored buckets</span>
+            <span>Bell curve</span>
+            <span>Mean & σ</span>
+        </div>
+        <button id="startBtn" type="button">START BALL LAB</button>
+        <div id="intro-note">The red curve is the expected normal approximation to the falling-ball distribution.</div>
+    </section>
+
+    <nav id="top-nav" aria-label="InteractiveLearn apps">
+        <a href="index.html">🏠 Home</a>
+        <a href="dots.html">⊙ Dots</a>
+        <a href="letters.html">A Letters</a>
+        <a href="wordmatch.html">🔤 Words</a>
+        <a href="mathsymbols.html">∑ Math</a>
+        <a href="measure.html">📏 Measure</a>
+        <a href="earthorbit.html">🌍 Orbit</a>
+        <a href="geocentric.html">🌐 Earth Center</a>
+    </nav>
+
+    <aside id="control-panel" aria-label="Gaussian distribution controls">
+        <button id="pauseBtn" type="button">⏸ Pause</button>
+        <button id="dropBtn" type="button">+ Balls</button>
+        <button id="slowBtn" type="button">− Slower</button>
+        <button id="fastBtn" type="button">+ Faster</button>
+        <button id="resetBtn" type="button">↻ Reset</button>
+    </aside>
+
+    <section id="stats-panel" aria-live="polite"></section>
+    <div id="message" role="status">Most balls land near the middle because there are many paths to the center buckets.</div>
+
+    <script src="js/gaussian.js?v=20260507"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#0b1020">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-180.png">
+    <title>Small to Big Sorter</title>
+    <link rel="stylesheet" href="bigsmall.css?v=20260505">
+</head>
+<body>
+    <canvas id="party-canvas" aria-hidden="true"></canvas>
+
+    <main id="app" aria-live="polite">
+        <nav id="top-nav" aria-label="InteractiveLearn apps">
+            <a href="shapes.html">▲ Shapes</a>
+            <a href="dots.html">⊙ Dots</a>
+            <a href="letters.html">A Letters</a>
+            <a href="wordmatch.html">🔤 Words</a>
+            <a href="spellword.html">🧩 Spell</a>
+            <a href="patternsounds.html">🔁 Sounds</a>
+            <a href="numberquantity.html">🔢 Quantity</a>
+            <a href="arrowpath.html">➡️ Arrows</a>
+            <a href="eggmath.html">🥚 Egg Math</a>
+            <a href="measure.html">📏 Measure</a>
+        </nav>
+
+        <section id="game-card">
+            <header id="header-row">
+                <div>
+                    <p class="eyebrow">Toddler Sorting</p>
+                    <h1>Small to Big Sorter</h1>
+                </div>
+                <div id="score-panel">
+                    <span id="starsText">Stars 0</span>
+                    <span id="roundText">Round 1</span>
+                </div>
+            </header>
+
+            <p id="instruction">Tap the same objects from smallest to biggest. Each one fills the matching cell below.</p>
+
+            <section id="play-stage" aria-label="Size ordering activity">
+                <div id="object-zone">
+                    <div id="hintText">small → big</div>
+                    <div id="object-row" aria-label="Objects to order"></div>
+                </div>
+
+                <div id="cell-zone" aria-label="Order cells">
+                    <div id="cell-title">Fill the cells from smaller to bigger</div>
+                    <div id="cell-row"></div>
+                </div>
+            </section>
+
+            <p id="feedback" role="status">Click the smallest object first.</p>
+
+            <div id="actions">
+                <button id="hearBtn" type="button">🔊 Hear</button>
+                <button id="nextBtn" type="button">Next Set →</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/bigsmall.js?v=20260505"></script>
+</body>
+</html>

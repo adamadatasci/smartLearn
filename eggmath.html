@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#0b1020">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-180.png">
+    <title>Egg Math — Toddler Equations</title>
+    <link rel="stylesheet" href="eggmath.css?v=20260505">
+</head>
+<body>
+    <canvas id="eggmath-canvas"></canvas>
+
+    <section id="hud">
+        <h1>Egg Math</h1>
+        <div class="links">
+            <a href="index.html">🏠 Home</a>
+            <a href="shapes.html">▲ Shape Shifter</a>
+            <a href="dots.html">⊙ Dots</a>
+            <a href="letters.html">A Reading</a>
+            <a href="wordmatch.html">🔤 Word Match</a>
+            <a href="spellword.html">🧩 Spell Word</a>
+            <a href="arrowpath.html">➡️ Arrows</a>
+            <a href="patternsounds.html">🔁 Sounds</a>
+            <a href="numberquantity.html">🔢 Quantity</a>
+            <a href="bigsmall.html">↕️ Big Small</a>
+            <a href="hideball.html">● Hidden Ball</a>
+            <a href="tictactoe.html"># Tic-Tac-Toe</a>
+            <a href="mathsymbols.html">∑ Math Symbols</a>
+            <a href="measure.html">💧 Measurement</a>
+        </div>
+        <p id="status">Press the missing number on your keyboard.</p>
+        <button id="restartBtn" type="button">Restart</button>
+    </section>
+
+    <main id="lesson-card" aria-live="polite">
+        <div id="objectEquation" class="object-equation"></div>
+        <div id="numberEquation" class="number-equation"></div>
+        <div id="hint">Floating numbers are choices. Use your keyboard.</div>
+    </main>
+
+    <div id="celebration" class="hidden">
+        <div id="celebrationText">Great job!</div>
+    </div>
+
+    <script src="js/eggmath.js?v=20260505"></script>
+</body>
+</html>

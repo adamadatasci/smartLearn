@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#0b1020">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-180.png">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="tictactoe.css?v=20260505">
+</head>
+<body>
+    <main class="wrap">
+        <section class="panel">
+            <h1>Tic-Tac-Toe</h1>
+            <div class="links">
+                <a href="index.html">🏠 Home</a>
+                <a href="shapes.html">▲ Shape Shifter</a>
+                <a href="dots.html">⊙ Dots</a>
+                <a href="letters.html">A Letters</a>
+                <a href="wordmatch.html">🔤 Word Match</a>
+                <a href="spellword.html">🧩 Spell Word</a>
+                <a href="arrowpath.html">➡️ Arrows</a>
+                <a href="patternsounds.html">🔁 Sounds</a>
+                <a href="numberquantity.html">🔢 Quantity</a>
+                <a href="bigsmall.html">↕️ Big Small</a>
+                <a href="hideball.html">● Hidden Ball</a>
+                <a href="mathsymbols.html">∑ Math Symbols</a>
+                <a href="measure.html">💧 Measurement</a>
+            </div>
+            <p id="status">Player X turn — click a cell or press keys 1-9.</p>
+            <div class="score">
+                <span>X: <strong id="scoreX">0</strong></span>
+                <span>O: <strong id="scoreO">0</strong></span>
+                <span>Draws: <strong id="scoreD">0</strong></span>
+            </div>
+            <div id="board" class="board" aria-label="Tic Tac Toe Board"></div>
+            <div class="actions">
+                <button id="newRoundBtn" type="button">New Round</button>
+                <button id="resetScoreBtn" type="button">Reset Score</button>
+            </div>
+            <p class="hint">Keyboard layout: 1 2 3 / 4 5 6 / 7 8 9</p>
+        </section>
+    </main>
+
+    <script src="js/tictactoe.js?v=20260505"></script>
+</body>
+</html>

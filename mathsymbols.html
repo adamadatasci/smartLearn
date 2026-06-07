@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#0b1020">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-180.png">
+    <title>Math Symbols Hunt</title>
+    <link rel="stylesheet" href="mathsymbols.css?v=20260505">
+</head>
+<body>
+    <canvas id="math-canvas"></canvas>
+
+    <section id="hud">
+        <h1>Math Symbols Hunt</h1>
+        <div class="links">
+            <a href="index.html">🏠 Home</a>
+            <a href="shapes.html">▲ Shape Shifter</a>
+            <a href="dots.html">⊙ Dots</a>
+            <a href="letters.html">A Letters</a>
+            <a href="wordmatch.html">🔤 Word Match</a>
+            <a href="spellword.html">🧩 Spell Word</a>
+            <a href="arrowpath.html">➡️ Arrows</a>
+            <a href="patternsounds.html">🔁 Sounds</a>
+            <a href="numberquantity.html">🔢 Quantity</a>
+            <a href="bigsmall.html">↕️ Big Small</a>
+            <a href="hideball.html">● Hidden Ball</a>
+            <a href="tictactoe.html"># Tic-Tac-Toe</a>
+            <a href="eggmath.html">🥚 Egg Math</a>
+            <a href="measure.html">💧 Measurement</a>
+            <a href="earthorbit.html">🌍 Orbit Lab</a>
+            <a href="gaussian.html">🔔 Gaussian</a>
+            <a href="geocentric.html">🌐 Earth Center</a>
+        </div>
+        <p id="status">Find all matching symbols for the target.</p>
+        <div class="target-row">
+            <span class="label">Target</span>
+            <span id="targetSymbol">+</span>
+            <span id="remaining">remaining: 0</span>
+        </div>
+        <div class="progress-row">
+            <span id="progress">0 / 0 symbols completed</span>
+            <button id="restartBtn" type="button">Restart</button>
+        </div>
+    </section>
+
+    <script src="js/mathsymbols.js?v=20260505"></script>
+</body>
+</html>

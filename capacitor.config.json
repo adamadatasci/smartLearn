@@ -1,0 +1,8 @@
+{
+  "appId": "com.interactivelearn.app",
+  "appName": "InteractiveLearn",
+  "webDir": "www",
+  "server": {
+    "iosScheme": "interactivelearn"
+  }
+}

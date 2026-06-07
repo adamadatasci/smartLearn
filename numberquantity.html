@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#0b1020">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-180.png">
+    <title>Number Quantity Match</title>
+    <link rel="stylesheet" href="numberquantity.css?v=20260505">
+</head>
+<body>
+    <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+
+    <main id="app" aria-live="polite">
+        <nav id="top-nav" aria-label="InteractiveLearn apps">
+            <a href="shapes.html">▲ Shapes</a>
+            <a href="dots.html">⊙ Dots</a>
+            <a href="letters.html">A Letters</a>
+            <a href="wordmatch.html">🔤 Words</a>
+            <a href="spellword.html">🧩 Spell</a>
+            <a href="patternsounds.html">🔁 Sounds</a>
+            <a href="arrowpath.html">➡️ Arrows</a>
+            <a href="bigsmall.html">↕️ Big Small</a>
+            <a href="eggmath.html">🥚 Egg Math</a>
+            <a href="measure.html">📏 Measure</a>
+        </nav>
+
+        <section id="game-card">
+            <header id="header-row">
+                <div>
+                    <p class="eyebrow">Toddler Counting</p>
+                    <h1>Number Quantity Match</h1>
+                </div>
+                <div id="score-panel">
+                    <span id="starsText">Stars 0</span>
+                    <span id="roundText">Round 1</span>
+                </div>
+            </header>
+
+            <p id="instruction">Look at the big number. Tap the group with the same number of objects.</p>
+
+            <section id="number-stage" aria-label="Target number">
+                <div id="number-bubble">
+                    <span id="targetNumber">3</span>
+                </div>
+                <button id="hearBtn" type="button">🔊 Count With Me</button>
+            </section>
+
+            <section id="groups" aria-label="Object groups"></section>
+            <p id="feedback" role="status">Which group has the same amount?</p>
+
+            <div id="actions">
+                <button id="easyBtn" class="level-btn active" type="button">1–5</button>
+                <button id="biggerBtn" class="level-btn" type="button">1–9</button>
+                <button id="nextBtn" type="button">Next Number →</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/numberquantity.js?v=20260505"></script>
+</body>
+</html>

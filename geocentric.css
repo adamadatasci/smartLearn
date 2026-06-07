@@ -1,0 +1,70 @@
+@import url("earthorbit.css?v=20260507");
+
+html,
+body {
+    background: radial-gradient(circle at 50% 48%, #102760 0, #071225 45%, #01030a 100%);
+}
+
+#intro {
+    background:
+        radial-gradient(circle at 50% 38%, rgba(255, 215, 98, 0.12), transparent 30%),
+        radial-gradient(circle at 50% 44%, rgba(70, 140, 255, 0.16), transparent 42%),
+        rgba(1, 4, 16, 0.93);
+}
+
+#intro h1 {
+    text-shadow: 0 0 42px rgba(255, 219, 110, 0.58), 0 0 34px rgba(117, 213, 255, 0.58);
+}
+
+#startBtn {
+    border-color: #ffe16f;
+    color: #ffe16f;
+}
+
+#startBtn:hover,
+#startBtn:focus-visible {
+    background: #ffe16f;
+    box-shadow: 0 0 44px rgba(255, 225, 111, 0.42);
+}
+
+.fact-chips span {
+    border-color: rgba(255, 225, 111, 0.32);
+    background: rgba(255, 217, 91, 0.08);
+    color: #fff1a8;
+}
+
+#top-nav a:hover,
+#control-panel button:hover {
+    border-color: #ffe16f;
+    background: rgba(255, 225, 111, 0.16);
+}
+
+#sky-screen {
+    display: block;
+    width: 100%;
+    height: 120px;
+    margin-top: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    background: linear-gradient(#143e82, #091734 64%, #06101f 64%);
+}
+
+@media (max-width: 980px) {
+    #info-panel {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    #sky-screen {
+        height: 96px;
+    }
+}
+
+@media (max-width: 680px) {
+    #info-panel {
+        grid-template-columns: 1fr;
+    }
+
+    .panel-card:nth-child(3) {
+        display: block;
+    }
+}
