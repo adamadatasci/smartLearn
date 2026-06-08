@@ -138,11 +138,11 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: clamp(8px, 1.7vw, 14px);
-    min-height: 86px;
-    margin: 20px 0;
-    padding: 14px;
+    min-height: 76px;
+    margin: 16px 0;
+    padding: 12px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 24px;
+    border-radius: 22px;
     background: rgba(1, 6, 22, 0.36);
 }
 
@@ -353,6 +353,21 @@ h1 {
 
     #side-panel {
         order: -1;
+    }
+
+    #play-area {
+        gap: 16px;
+    }
+
+    #arrow-strip {
+        margin: 12px 0;
+        padding: 10px;
+    }
+
+    .arrow-token {
+        width: clamp(42px, 9vw, 64px);
+        height: clamp(42px, 9vw, 64px);
+        font-size: clamp(1.7rem, 5vw, 2.8rem);
     }
 
     #feedback {

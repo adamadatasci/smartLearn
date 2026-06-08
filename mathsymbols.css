@@ -108,3 +108,41 @@ html, body {
 #restartBtn:hover {
     background: rgba(255,255,255,0.16);
 }
+
+@media (max-width: 680px) {
+    #hud {
+        top: 8px;
+        left: 8px;
+        width: calc(100vw - 16px);
+        padding: 10px 12px;
+        border-radius: 16px;
+    }
+
+    #hud h1 {
+        font-size: 1rem;
+        margin-bottom: 6px;
+    }
+
+    .links {
+        gap: 6px;
+    }
+
+    .links a {
+        font-size: 0.78rem;
+    }
+
+    #targetSymbol {
+        font-size: 1.35rem;
+        padding: 2px 8px;
+    }
+
+    .target-row,
+    .progress-row {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    #restartBtn {
+        padding: 6px 10px;
+    }
+}

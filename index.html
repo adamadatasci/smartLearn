@@ -60,8 +60,8 @@
         .grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-            max-width: 520px;
+            gap: 10px;
+            max-width: 480px;
             margin: 0 auto;
         }
         a.tile {
@@ -74,17 +74,26 @@
             color: #eaf0ff;
             background: rgba(255, 255, 255, 0.06);
             border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: 20px;
-            padding: 16px 10px;
-            min-height: 104px;
+            border-radius: 18px;
+            padding: 14px 8px;
+            min-height: 96px;
             transition: transform 0.12s ease, background 0.2s ease;
+        }
+        a.tile .emoji { font-size: 1.8rem; }
+        a.tile .name { font-size: 0.82rem; }
+        @media (max-width: 430px) {
+            .grid { grid-template-columns: 1fr; max-width: 100%; }
+            a.tile { min-height: 88px; padding: 12px 10px; }
         }
         a.tile:active {
             transform: scale(0.95);
             background: rgba(255, 255, 255, 0.12);
         }
-        a.tile .emoji { font-size: 2rem; line-height: 1; margin-bottom: 8px; }
+        a.tile .emoji { line-height: 1; margin-bottom: 8px; }
         a.tile .name { font-size: 0.82rem; font-weight: 600; line-height: 1.2; }
+        @media (max-width: 430px) {
+            a.tile .emoji { font-size: 1.7rem; }
+        }
         footer.home-foot {
             text-align: center;
             margin-top: 22px;

@@ -330,10 +330,27 @@ body.running #message {
     }
 
     #info-panel {
-        bottom: 54px;
+        bottom: 56px;
+        top: auto;
+        left: 8px;
+        right: 8px;
+        width: calc(100vw - 16px);
         grid-template-columns: 1fr;
         max-height: 42vh;
         overflow-y: auto;
+        padding: 8px 0;
+        background: rgba(1, 4, 16, 0.70);
+        border-radius: 18px;
+    }
+
+    .panel-card {
+        padding: 12px;
+        border-radius: 18px;
+    }
+
+    #moon-screen,
+    #earth-screen {
+        height: 86px;
     }
 
     .panel-card:nth-child(3) {

@@ -76,7 +76,7 @@ body {
     width: min(900px, calc(100vw - 24px));
     max-height: calc(100vh - 118px);
     overflow: auto;
-    padding: clamp(18px, 4vw, 36px);
+    padding: clamp(16px, 3.5vw, 34px);
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 34px;
     background: linear-gradient(150deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.06));
