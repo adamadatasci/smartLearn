@@ -53,3 +53,38 @@ Edit `capacitor.config.json` to change:
 
 App icons live in `icons/`. To use custom icons in the native build, you can also
 add `@capacitor/assets` and run `npx capacitor-assets generate --ios`.
+
+## Upload to GitHub
+
+This project is ready to push to GitHub as a normal static web app / Capacitor
+project. The generated `www/`, native `ios/`, and `node_modules/` folders are
+ignored so only source files are committed.
+
+```bash
+git init
+git add .
+git commit -m "InteractiveLearn: iOS-ready learning games app"
+git branch -M main
+git remote add origin https://github.com/adamadatasci/smartLearn.git
+git push -u origin main
+```
+
+If Git asks for credentials during `git push`:
+
+- Username: your GitHub username, for example `adamadatasci`.
+- Password: a GitHub Personal Access Token, not your GitHub password.
+
+For a classic token, create it at <https://github.com/settings/tokens> and check
+the `repo` scope. If you use a fine-grained token instead, grant access to the
+target repository and set **Contents** to **Read and write**.
+
+If you see this error:
+
+```text
+remote: Permission to USER/REPO.git denied to USER.
+fatal: unable to access 'https://github.com/USER/REPO.git/': The requested URL returned error: 403
+```
+
+the local Git setup is usually fine; the token does not have write permission to
+that repository. Generate a new token with the permissions above and run
+`git push -u origin main` again.

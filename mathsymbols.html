@@ -11,31 +11,36 @@
     <link rel="apple-touch-icon" href="icons/icon-180.png">
     <title>Math Symbols Hunt</title>
     <link rel="stylesheet" href="mathsymbols.css?v=20260505">
+    <link rel="stylesheet" href="app-menu.css?v=20260505">
 </head>
 <body>
     <canvas id="math-canvas"></canvas>
 
     <section id="hud">
         <h1>Math Symbols Hunt</h1>
-        <div class="links">
-            <a href="index.html">🏠 Home</a>
-            <a href="shapes.html">▲ Shape Shifter</a>
-            <a href="dots.html">⊙ Dots</a>
-            <a href="letters.html">A Letters</a>
-            <a href="wordmatch.html">🔤 Word Match</a>
-            <a href="spellword.html">🧩 Spell Word</a>
-            <a href="arrowpath.html">➡️ Arrows</a>
-            <a href="patternsounds.html">🔁 Sounds</a>
-            <a href="numberquantity.html">🔢 Quantity</a>
-            <a href="bigsmall.html">↕️ Big Small</a>
-            <a href="hideball.html">● Hidden Ball</a>
-            <a href="tictactoe.html"># Tic-Tac-Toe</a>
-            <a href="eggmath.html">🥚 Egg Math</a>
-            <a href="measure.html">💧 Measurement</a>
-            <a href="earthorbit.html">🌍 Orbit Lab</a>
-            <a href="gaussian.html">🔔 Gaussian</a>
-            <a href="geocentric.html">🌐 Earth Center</a>
-        </div>
+        <details class="app-menu">
+            <summary aria-label="Open app menu"></summary>
+            <div class="app-menu-panel" role="navigation" aria-label="InteractiveLearn apps">
+                <a href="index.html">🏠 Home</a>
+                <a href="numberquantity.html">🔢 Quantity</a>
+                <a href="shapes.html">▲ Shapes</a>
+                <a href="dots.html">⊙ Dots</a>
+                <a href="letters.html">A Letters</a>
+                <a href="wordmatch.html">🔤 Words</a>
+                <a href="spellword.html">🧩 Spell</a>
+                <a href="patternsounds.html">🔁 Sounds</a>
+                <a href="arrowpath.html">➡️ Arrows</a>
+                <a href="bigsmall.html">↕️ Big Small</a>
+                <a href="hideball.html">● Hidden Ball</a>
+                <a href="tictactoe.html"># Tic-Tac-Toe</a>
+                <a href="mathsymbols.html">∑ Math</a>
+                <a href="eggmath.html">🥚 Egg Math</a>
+                <a href="measure.html">📏 Measure</a>
+                <a href="earthorbit.html">🌍 Orbit</a>
+                <a href="gaussian.html">🔔 Gaussian</a>
+                <a href="geocentric.html">🌐 Earth Center</a>
+            </div>
+        </details>
         <p id="status">Find all matching symbols for the target.</p>
         <div class="target-row">
             <span class="label">Target</span>

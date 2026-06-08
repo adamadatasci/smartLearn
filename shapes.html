@@ -11,6 +11,7 @@
     <link rel="apple-touch-icon" href="icons/icon-180.png">
     <title>Shape Sorter — Bucket Game</title>
     <link rel="stylesheet" href="shapes.css?v=20260505">
+    <link rel="stylesheet" href="app-menu.css?v=20260505">
 </head>
 <body>
     <canvas id="game-canvas"></canvas>
@@ -43,18 +44,29 @@
     <div id="controls">
         <button id="resetBtn" title="Reset shapes (R)">&#8635; Reset</button>
         <button id="burstBtn" title="Spawn burst (B)">&#10022; Burst</button>
-        <a href="dots.html"    style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Ordered Dots">&#9711; Dots</a>
-        <a href="letters.html"  style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Letters A-Z">&#65; Letters</a>
-        <a href="wordmatch.html" style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Icon Word Match">🔤 Word Match</a>
-        <a href="spellword.html" style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Build the Word">🧩 Spell Word</a>
-        <a href="arrowpath.html" style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Arrow Path Grid">➡️ Arrows</a>
-        <a href="patternsounds.html" style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Pattern & Sound Match">🔁 Sounds</a>
-        <a href="numberquantity.html" style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Number Quantity Match">🔢 Quantity</a>
-        <a href="bigsmall.html" style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Big / Small Sorter">↕️ Big Small</a>
-        <a href="hideball.html" style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Hidden Ball">&#9679; Hidden Ball</a>
-        <a href="tictactoe.html" style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Tic-Tac-Toe"># Tic-Tac-Toe</a>
-        <a href="mathsymbols.html" style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Math Symbols Hunt">∑ Math Symbols</a>
-        <a href="measure.html" style="padding:8px 18px;background:rgba(0,0,0,0.55);border:1px solid rgba(255,255,255,0.18);color:#dde;border-radius:24px;font-size:0.85rem;text-decoration:none;backdrop-filter:blur(8px);display:inline-flex;align-items:center;" title="Shape Splash Measurement">💧 Measurement</a>
+        <details class="app-menu">
+            <summary aria-label="Open app menu"></summary>
+            <div class="app-menu-panel" role="navigation" aria-label="InteractiveLearn apps">
+                <a href="index.html">🏠 Home</a>
+                <a href="numberquantity.html">🔢 Quantity</a>
+                <a href="shapes.html">▲ Shapes</a>
+                <a href="dots.html">⊙ Dots</a>
+                <a href="letters.html">A Letters</a>
+                <a href="wordmatch.html">🔤 Words</a>
+                <a href="spellword.html">🧩 Spell</a>
+                <a href="patternsounds.html">🔁 Sounds</a>
+                <a href="arrowpath.html">➡️ Arrows</a>
+                <a href="bigsmall.html">↕️ Big Small</a>
+                <a href="hideball.html">● Hidden Ball</a>
+                <a href="tictactoe.html"># Tic-Tac-Toe</a>
+                <a href="mathsymbols.html">∑ Math</a>
+                <a href="eggmath.html">🥚 Egg Math</a>
+                <a href="measure.html">📏 Measure</a>
+                <a href="earthorbit.html">🌍 Orbit</a>
+                <a href="gaussian.html">🔔 Gaussian</a>
+                <a href="geocentric.html">🌐 Earth Center</a>
+            </div>
+        </details>
     </div>
 
     <div id="stats-panel"></div>

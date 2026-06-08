@@ -11,6 +11,7 @@
     <link rel="apple-touch-icon" href="icons/icon-180.png">
     <title>Earth-Centered Sun and Moon Lab</title>
     <link rel="stylesheet" href="geocentric.css?v=20260507">
+    <link rel="stylesheet" href="app-menu.css?v=20260505">
 </head>
 <body>
     <canvas id="orbit-canvas" aria-label="Earth-centered view with Sun and Moon rotating around Earth"></canvas>
@@ -33,17 +34,29 @@
         <button id="startBtn" type="button">START EARTH-CENTER LAB</button>
         <div id="intro-note">This is a geocentric reference-frame illustration: Earth is drawn fixed while the Sun appears to turn once per day.</div>
     </section>
-
-    <nav id="top-nav" aria-label="InteractiveLearn apps">
-        <a href="index.html">🏠 Home</a>
-        <a href="dots.html">⊙ Dots</a>
-        <a href="letters.html">A Letters</a>
-        <a href="wordmatch.html">🔤 Words</a>
-        <a href="mathsymbols.html">∑ Math</a>
-        <a href="measure.html">📏 Measure</a>
-        <a href="earthorbit.html">🌍 Orbit</a>
-        <a href="gaussian.html">🔔 Gaussian</a>
-    </nav>
+        <details class="app-menu">
+            <summary aria-label="Open app menu"></summary>
+            <div class="app-menu-panel" role="navigation" aria-label="InteractiveLearn apps">
+                <a href="index.html">🏠 Home</a>
+                <a href="numberquantity.html">🔢 Quantity</a>
+                <a href="shapes.html">▲ Shapes</a>
+                <a href="dots.html">⊙ Dots</a>
+                <a href="letters.html">A Letters</a>
+                <a href="wordmatch.html">🔤 Words</a>
+                <a href="spellword.html">🧩 Spell</a>
+                <a href="patternsounds.html">🔁 Sounds</a>
+                <a href="arrowpath.html">➡️ Arrows</a>
+                <a href="bigsmall.html">↕️ Big Small</a>
+                <a href="hideball.html">● Hidden Ball</a>
+                <a href="tictactoe.html"># Tic-Tac-Toe</a>
+                <a href="mathsymbols.html">∑ Math</a>
+                <a href="eggmath.html">🥚 Egg Math</a>
+                <a href="measure.html">📏 Measure</a>
+                <a href="earthorbit.html">🌍 Orbit</a>
+                <a href="gaussian.html">🔔 Gaussian</a>
+                <a href="geocentric.html">🌐 Earth Center</a>
+            </div>
+        </details>
 
     <aside id="control-panel" aria-label="Earth-centered orbit controls">
         <button id="pauseBtn" type="button">⏸ Pause</button>

@@ -11,6 +11,7 @@
     <link rel="apple-touch-icon" href="icons/icon-180.png">
     <title>Gaussian Distribution Ball Lab</title>
     <link rel="stylesheet" href="gaussian.css?v=20260507">
+    <link rel="stylesheet" href="app-menu.css?v=20260505">
 </head>
 <body>
     <canvas id="gaussian-canvas" aria-label="Colored balls bouncing through obstacle pegs into buckets forming a Gaussian distribution"></canvas>
@@ -31,17 +32,29 @@
         <button id="startBtn" type="button">START BALL LAB</button>
         <div id="intro-note">The red curve is the expected normal approximation to the falling-ball distribution.</div>
     </section>
-
-    <nav id="top-nav" aria-label="InteractiveLearn apps">
-        <a href="index.html">🏠 Home</a>
-        <a href="dots.html">⊙ Dots</a>
-        <a href="letters.html">A Letters</a>
-        <a href="wordmatch.html">🔤 Words</a>
-        <a href="mathsymbols.html">∑ Math</a>
-        <a href="measure.html">📏 Measure</a>
-        <a href="earthorbit.html">🌍 Orbit</a>
-        <a href="geocentric.html">🌐 Earth Center</a>
-    </nav>
+        <details class="app-menu">
+            <summary aria-label="Open app menu"></summary>
+            <div class="app-menu-panel" role="navigation" aria-label="InteractiveLearn apps">
+                <a href="index.html">🏠 Home</a>
+                <a href="numberquantity.html">🔢 Quantity</a>
+                <a href="shapes.html">▲ Shapes</a>
+                <a href="dots.html">⊙ Dots</a>
+                <a href="letters.html">A Letters</a>
+                <a href="wordmatch.html">🔤 Words</a>
+                <a href="spellword.html">🧩 Spell</a>
+                <a href="patternsounds.html">🔁 Sounds</a>
+                <a href="arrowpath.html">➡️ Arrows</a>
+                <a href="bigsmall.html">↕️ Big Small</a>
+                <a href="hideball.html">● Hidden Ball</a>
+                <a href="tictactoe.html"># Tic-Tac-Toe</a>
+                <a href="mathsymbols.html">∑ Math</a>
+                <a href="eggmath.html">🥚 Egg Math</a>
+                <a href="measure.html">📏 Measure</a>
+                <a href="earthorbit.html">🌍 Orbit</a>
+                <a href="gaussian.html">🔔 Gaussian</a>
+                <a href="geocentric.html">🌐 Earth Center</a>
+            </div>
+        </details>
 
     <aside id="control-panel" aria-label="Gaussian distribution controls">
         <button id="pauseBtn" type="button">⏸ Pause</button>

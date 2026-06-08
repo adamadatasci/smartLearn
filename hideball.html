@@ -11,6 +11,7 @@
     <link rel="apple-touch-icon" href="icons/icon-180.png">
     <title>Hidden Ball — Find the Letters Hiding Balls</title>
     <link rel="stylesheet" href="dots.css?v=20260505">
+    <link rel="stylesheet" href="app-menu.css?v=20260505">
     <style>
         #hud { max-width: min(620px, calc(100vw - 32px)); }
         #scoreboard {
@@ -29,22 +30,29 @@
 
     <div id="hud">
         <h1>Hidden Ball</h1>
-        <div style="margin-bottom:6px;display:flex;gap:8px;flex-wrap:wrap;">
-            <a href="index.html"   style="font-size:0.78rem;color:#8899cc;text-decoration:none;">🏠 Home</a>
-            <a href="shapes.html"  style="font-size:0.78rem;color:#8899cc;text-decoration:none;">&#9650; Shape Shifter</a>
-            <a href="dots.html"    style="font-size:0.78rem;color:#8899cc;text-decoration:none;">&#9711; Dots</a>
-            <a href="letters.html" style="font-size:0.78rem;color:#8899cc;text-decoration:none;">&#65; Letters A-Z</a>
-            <a href="wordmatch.html" style="font-size:0.78rem;color:#8899cc;text-decoration:none;">🔤 Word Match</a>
-            <a href="spellword.html" style="font-size:0.78rem;color:#8899cc;text-decoration:none;">🧩 Spell Word</a>
-            <a href="arrowpath.html" style="font-size:0.78rem;color:#8899cc;text-decoration:none;">➡️ Arrows</a>
-            <a href="patternsounds.html" style="font-size:0.78rem;color:#8899cc;text-decoration:none;">🔁 Sounds</a>
-            <a href="numberquantity.html" style="font-size:0.78rem;color:#8899cc;text-decoration:none;">🔢 Quantity</a>
-            <a href="bigsmall.html" style="font-size:0.78rem;color:#8899cc;text-decoration:none;">↕️ Big Small</a>
-            <a href="tictactoe.html" style="font-size:0.78rem;color:#8899cc;text-decoration:none;"># Tic-Tac-Toe</a>
-            <a href="mathsymbols.html" style="font-size:0.78rem;color:#8899cc;text-decoration:none;">∑ Math Symbols</a>
-            <a href="eggmath.html" style="font-size:0.78rem;color:#8899cc;text-decoration:none;">🥚 Egg Math</a>
-            <a href="measure.html" style="font-size:0.78rem;color:#8899cc;text-decoration:none;">💧 Measurement</a>
-        </div>
+        <details class="app-menu">
+            <summary aria-label="Open app menu"></summary>
+            <div class="app-menu-panel" role="navigation" aria-label="InteractiveLearn apps">
+                <a href="index.html">🏠 Home</a>
+                <a href="numberquantity.html">🔢 Quantity</a>
+                <a href="shapes.html">▲ Shapes</a>
+                <a href="dots.html">⊙ Dots</a>
+                <a href="letters.html">A Letters</a>
+                <a href="wordmatch.html">🔤 Words</a>
+                <a href="spellword.html">🧩 Spell</a>
+                <a href="patternsounds.html">🔁 Sounds</a>
+                <a href="arrowpath.html">➡️ Arrows</a>
+                <a href="bigsmall.html">↕️ Big Small</a>
+                <a href="hideball.html">● Hidden Ball</a>
+                <a href="tictactoe.html"># Tic-Tac-Toe</a>
+                <a href="mathsymbols.html">∑ Math</a>
+                <a href="eggmath.html">🥚 Egg Math</a>
+                <a href="measure.html">📏 Measure</a>
+                <a href="earthorbit.html">🌍 Orbit</a>
+                <a href="gaussian.html">🔔 Gaussian</a>
+                <a href="geocentric.html">🌐 Earth Center</a>
+            </div>
+        </details>
         <div id="scoreboard">
             <div><span class="lbl">SCORE </span><span id="scoreVal">0</span></div>
             <div><span class="lbl">STREAK </span><span id="streakVal">0</span></div>

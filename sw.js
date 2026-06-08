@@ -3,6 +3,7 @@ const CACHE = 'interactivelearn-v1';
 
 const ASSETS = [
   'index.html',
+  'app-menu.css',
   'manifest.json',
   'arrowpath.html', 'arrowpath.css', 'js/arrowpath.js',
   'bigsmall.html', 'bigsmall.css', 'js/bigsmall.js',

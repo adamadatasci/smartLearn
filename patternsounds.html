@@ -11,24 +11,35 @@
     <link rel="apple-touch-icon" href="icons/icon-180.png">
     <title>Pattern & Sound Match</title>
     <link rel="stylesheet" href="patternsounds.css?v=20260505">
+    <link rel="stylesheet" href="app-menu.css?v=20260505">
 </head>
 <body>
     <canvas id="party-canvas" aria-hidden="true"></canvas>
 
     <main id="app" aria-live="polite">
-        <nav id="top-nav" aria-label="InteractiveLearn apps">
-            <a href="shapes.html">▲ Shapes</a>
-            <a href="dots.html">⊙ Dots</a>
-            <a href="letters.html">A Letters</a>
-            <a href="wordmatch.html">🔤 Words</a>
-            <a href="spellword.html">🧩 Spell</a>
-            <a href="arrowpath.html">➡️ Arrows</a>
-            <a href="numberquantity.html">🔢 Quantity</a>
-            <a href="bigsmall.html">↕️ Big Small</a>
-            <a href="mathsymbols.html">∑ Symbols</a>
-            <a href="eggmath.html">🥚 Egg Math</a>
-            <a href="measure.html">📏 Measure</a>
-        </nav>
+        <details class="app-menu">
+            <summary aria-label="Open app menu"></summary>
+            <div class="app-menu-panel" role="navigation" aria-label="InteractiveLearn apps">
+                <a href="index.html">🏠 Home</a>
+                <a href="numberquantity.html">🔢 Quantity</a>
+                <a href="shapes.html">▲ Shapes</a>
+                <a href="dots.html">⊙ Dots</a>
+                <a href="letters.html">A Letters</a>
+                <a href="wordmatch.html">🔤 Words</a>
+                <a href="spellword.html">🧩 Spell</a>
+                <a href="patternsounds.html">🔁 Sounds</a>
+                <a href="arrowpath.html">➡️ Arrows</a>
+                <a href="bigsmall.html">↕️ Big Small</a>
+                <a href="hideball.html">● Hidden Ball</a>
+                <a href="tictactoe.html"># Tic-Tac-Toe</a>
+                <a href="mathsymbols.html">∑ Math</a>
+                <a href="eggmath.html">🥚 Egg Math</a>
+                <a href="measure.html">📏 Measure</a>
+                <a href="earthorbit.html">🌍 Orbit</a>
+                <a href="gaussian.html">🔔 Gaussian</a>
+                <a href="geocentric.html">🌐 Earth Center</a>
+            </div>
+        </details>
 
         <section id="game-card">
             <header id="header-row">
